@@ -1,0 +1,60 @@
+/* Header style */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Navigation menu style */
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+/* Navigation bar button style */
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+/*creating the two-colum layout*/
+*{
+    box-sizing: border-box;
+}
+/*navigation bar style*/
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color:bisque
+}
+/*navigation bar button style*/
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: larger;
+ }

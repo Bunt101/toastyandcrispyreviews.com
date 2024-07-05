@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Post Styles */
+.movie-post, .book-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-post a, .book-post a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.movie-post img, .book-post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-post h2, .book-post h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.movie-post a:hover, .book-post a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effects */
+.movie-post:hover, .book-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-post:hover img, .book-post:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Rating Styles */
+.rating {
+    display: inline-block;
+    color: #f39c12;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Navigation menu style */
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.rating {
+    position: relative;
+    font-size: 1.5em;
+    unicode-bidi: bidi-override;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.rating::before {
+    content: "★★★★";
+    letter-spacing: 3px;
+}
+
+.rating::after {
+    content: "★★★★";
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FFD700;  /* Gold color */
+    overflow: hidden;
+    width: 0;
+}
+
+.rating[data-rating="4"]::after {
+    width: 100%;
+}
+
+.rating[data-rating="3.5"]::after {
+    width: 86%;
+}
+
+.rating[data-rating="3"]::after {
+    width: 75%;
+}
+
+.rating[data-rating="2.5"]::after {
+    width: 60.7%;
+}
+
+.rating[data-rating="2"]::after {
+    width: 50%;
+}
+
+.rating[data-rating="1.5"]::after {
+    width: 35.5%;
+}
+
+.rating[data-rating="1"]::after {
+    width: 25%;
+}
+
+.rating[data-rating="0.5"]::after {
+    width: 12.5%;
+}
+
+.rating[data-rating="0"]::before {
+    content: '\f165'; /* Thumbs down icon from Font Awesome */
+    font-family: 'Font Awesome 5 Free'; /* Ensure correct Font Awesome family */
+    font-weight: 900;
+    color: #FFD700; /* Gold color */
+}
