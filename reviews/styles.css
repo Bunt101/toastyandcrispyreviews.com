@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5; /* Adjust line height for better readability */
+    text-align: center; /* Align text to the left */
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    text-align: center; /* Align heading to the center */
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.movie-post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: calc(100% - 40px); /* Adjust to 100% width minus padding and gap */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.movie-post h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.movie-post a {
+    text-decoration: none;
+    color: #000;
+}
+
+.movie-post a:hover {
+    text-decoration: underline;
+}
+
+.rating {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center; /* Align rating text to the center */
+}
+
+/*navigation bar style*/
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+/*navigation bar button style*/
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: larger;
+}
+
+/* Tribute Content Styling */
+.tribute {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Paragraph Spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* Tribute Heading Styling */
+.tribute h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.tribute h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    nav {
+        word-spacing: normal;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .tribute {
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
