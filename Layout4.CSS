@@ -1,17 +1,19 @@
-/* General Styles */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header style */
 header {
-    background-color: #ffffff;
-    color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
 }
 
 header h1 {
