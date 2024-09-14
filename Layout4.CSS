@@ -144,6 +144,7 @@ nav a:hover {
 
 .rating::before {
     content: "★★★★";
+    -webkit-text-stroke: 1px #FFD700; /* Gold outline */
     letter-spacing: 3px;
 }
 
