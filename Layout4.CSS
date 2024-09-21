@@ -188,7 +188,7 @@ nav a:hover {
 }
 
 .rating[data-rating="0.5"]::after {
-    width: 12.5%;
+    width: 10.8%;
 }
 
 .rating[data-rating="0"]::before {
