@@ -47,24 +47,31 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Tribute Content Styling */
-.tribute {
+/* Review Content Styling */
+.review {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
     text-align: left; /* Align text to the left for a cleaner look */
 }
 
-.tribute h1 {
+.review h1 {
     margin-bottom: 20px;
     font-size: 2em;
     color: #333;
+    text-align: left; /* Align text to the left */
 }
 
-.tribute h2 {
+.review h2 {
     margin-bottom: 10px;
     font-size: 1.5em;
     color: #666;
+}
+
+.review h3 {
+    margin-bottom: 10px;
+    font-size: 2.0em;
+    color:#666;
 }
 
 /* Paragraph Spacing */
@@ -94,7 +101,7 @@ p {
         margin: 5px 0;
     }
 
-    .tribute {
+    .review {
         padding: 10px;
     }
 
