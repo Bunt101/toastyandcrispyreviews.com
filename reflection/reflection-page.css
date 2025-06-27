@@ -1,0 +1,98 @@
+/* Header style */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Navigation menu style */
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+/* Navigation bar button style */
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Tribute Content Styling */
+.tribute {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.tribute h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.tribute h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Paragraph Spacing */
+p {
+    margin-bottom: 15px;
+    line-height: 1.8; /* Increased line height for readability */
+    font-size: 1.1em; /* Slightly larger font size for comfort */
+    text-align: left; /* Align text to the left */
+    font-family: 'Georgia', serif; /* Serif font for a review style */
+    color: #444; /* Darker color for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    nav {
+        word-spacing: normal;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .tribute {
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
