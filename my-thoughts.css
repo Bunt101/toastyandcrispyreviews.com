@@ -1,0 +1,112 @@
+/* Header style */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Navigation menu style */
+nav {
+    text-align: center;
+    word-spacing: 30px;
+    padding: 10px;
+    background-color: bisque;
+}
+
+/* Navigation bar button style */
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main Content Styling */
+main {
+    margin-top: 20px;
+}
+
+/* Two-column layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Tribute Section Styling */
+.tribute-post {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+}
+
+.tribute-post h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.tribute-post h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    nav {
+        word-spacing: normal;
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .tribute-post {
+        margin: 10px 0;
+        padding: 10px;
+        flex: 1 1 auto;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
